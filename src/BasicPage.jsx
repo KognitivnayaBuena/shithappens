@@ -6,7 +6,7 @@ function Button({ children, onClick, className = "", ...props }) {
   return (
     <button
       onClick={onClick}
-      className={`bg-yellow-400 hover:bg-yellow-300 text-black text-lg px-4 py-2 rounded relative overflow-hidden ${className}`}
+      className={`bg-yellow-400 hover:bg-yellow-300 text-black dark:bg-yellow-700 dark:hover:bg-yellow-600 dark:text-white text-lg px-4 py-2 rounded relative overflow-hidden ${className}`}
       {...props}
     >
       {children}
@@ -16,7 +16,7 @@ function Button({ children, onClick, className = "", ...props }) {
 
 function Card({ children, className = "" }) {
   return (
-    <div className={`rounded-2xl shadow-lg bg-white ${className}`}>{children}</div>
+    <div className={`rounded-2xl shadow-lg bg-white dark:bg-gray-800 ${className}`}>{children}</div>
   );
 }
 
